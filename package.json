@@ -1,6 +1,6 @@
 {
   "name": "@augustbright/react-scrollable",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple component for detection of an element being scrolled",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
