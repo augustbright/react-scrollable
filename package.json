@@ -1,6 +1,6 @@
 {
-  "name": "react-scrollable",
-  "version": "1.0.0",
+  "name": "@augustbright/react-scrollable",
+  "version": "1.0.1",
   "description": "A simple component for detection of an element being scrolled",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,9 +40,10 @@
     "babel-loader": "^8.0.6",
     "typescript": "^3.7.5",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "react": "^16.12.0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.12.0"
   }
 }

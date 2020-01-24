@@ -2,3 +2,4 @@ src
 .babelrc
 tsconfig.json
 webpack.config.json
+.github
