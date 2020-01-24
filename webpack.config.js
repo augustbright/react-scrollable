@@ -12,7 +12,14 @@ module.exports = {
             {test: /\.tsx/, exclude: /node_modules/, use: 'babel-loader'}
         ]
     },
-    externals: ['react'],
+    externals: {
+        react: {
+            root: 'React',
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react'
+        }
+    },
     resolve: {
         extensions: ['*', '.js', '.ts', '.tsx']
     }
