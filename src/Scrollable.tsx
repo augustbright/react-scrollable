@@ -52,7 +52,7 @@ export default class Scrollable extends React.Component<
     window.removeEventListener("scroll", this.onWindowScroll);
   }
 
-  onWindowScroll(event: Event) {
+  onWindowScroll() {
     this.updateClientState();
   }
 
@@ -83,6 +83,6 @@ export default class Scrollable extends React.Component<
 
   render() {
     const {children, ...rest } = this.props;
-    return <div style={{display: 'content'}} ref={this.ref} {...rest}>{this.props.children(this.computeOutput())}</div>;
+    return <div style={{display: 'content'}} ref={this.ref} {...rest}>{children(this.computeOutput())}</div>;
   }
 }
